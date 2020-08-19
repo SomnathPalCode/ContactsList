@@ -12,7 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.recyclerview.widget.RecyclerView;
 
+//import com.pkmmte.view.CircularImageView;
+
 import com.mikhaellopez.circularimageview.CircularImageView;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
@@ -26,6 +30,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
         this.filteredList = mylist;
     }
 
+    @NotNull
     @Override
     public MyAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new MyViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.row, parent, false));
@@ -43,7 +48,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
         if(item.getProfile()!=null)
             holder.profile_image.setImageBitmap(item.getProfile());
         else
-            holder.profile_image.setImageResource(R.drawable.ic_person_white);
+            holder.profile_image.setImageResource(R.drawable.ic_person_black);
         holder.check.setChecked(item.isChecked());
 
         //===========click listner of check box===============//

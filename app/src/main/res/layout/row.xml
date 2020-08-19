@@ -19,12 +19,25 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:src="@drawable/ic_person_white"
-            app:civ_border="true"
-            app:civ_border_width="1dp"
-            app:civ_border_color="#FFFFCC"
-            app:civ_circle_color="#FF33CC"/>
+            android:layout_marginHorizontal="3dp"
+            android:src="@drawable/ic_person_black"
+            app:civ_border_color="#00b386"
+            app:civ_border_width="3dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="1dp"
+            app:civ_shadow_color="#4d0026"/>
+
+<!--        <com.pkmmte.view.CircularImageView-->
+<!--            android:id="@+id/profile_image"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:src="@drawable/ic_person_white"-->
+<!--            app:border="true"-->
+<!--            app:border_color="#FFFFCC"-->
+<!--            app:border_width="1dp"-->
+<!--            app:shadow="true"/>-->
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/textLayout"
